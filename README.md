@@ -11,10 +11,10 @@
 ```bash
 cd server
 python3 -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
+source venv/bin/activate        
 pip install -r requirements.txt
-cp .env.example .env            # set SQLALCHEMY_DATABASE_URI + SECRET_KEY
-python run.py                   # API: http://localhost:5001
+cp .env.example .env           
+python run.py                   
 ```
 
 ### 2. Create admin user (one time)
@@ -32,7 +32,7 @@ python seed_admin.py
 ```bash
 cd client
 npm install
-npm run dev                     # app: http://localhost:3000
+npm run dev                    
 ```
 
 Then open `http://localhost:3000` and log in with `admin@example.com` / `admin123`.
@@ -47,10 +47,10 @@ Simple full‑stack app to browse and manage car listings (React SPA + Flask API
 # backend
 cd server
 python3 -m venv venv
-source venv/bin/activate         # Windows: venv\Scripts\activate
+source venv/bin/activate        
 pip install -r requirements.txt
-cp .env.example .env             # set SQLALCHEMY_DATABASE_URI + SECRET_KEY
-python run.py                    # API on http://localhost:5001
+cp .env.example .env             
+python run.py                    
 
 # seed admin (one time)
 export ADMIN_EMAIL=admin@example.com
@@ -60,7 +60,7 @@ python seed_admin.py
 # frontend
 cd ../client
 npm install
-npm run dev                      # app on http://localhost:3000
+npm run dev                      
 ```
 
 Log in with the seeded admin to access the admin panel and manage cars.
@@ -81,7 +81,7 @@ FLUSH PRIVILEGES;
 ```bash
 cd server
 python3 -m venv venv
-source venv/bin/activate          # Windows: venv\Scripts\activate
+source venv/bin/activate          
 pip install -r requirements.txt
 ```
 
