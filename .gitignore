@@ -1,0 +1,18 @@
+# Python
+server/venv/
+server/.env
+server/cars.db
+server/instance/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node
+client/node_modules/
+client/dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
